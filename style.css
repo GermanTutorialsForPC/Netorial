@@ -1,0 +1,98 @@
+body
+{
+        font-family:Arial;
+        margin:0;
+        padding:0;
+        text-align:center;
+        background-image:url("designImages/verlauf.png");
+        background-repeat:repeat-x;
+        background-color:#fff;
+}
+
+#root
+{
+        width:1000px;
+        margin:0 auto;
+        position:relativ;
+        text-align:left;
+}
+
+#logo
+{
+        width:1000px;
+        height:77px;
+        background-image:url("designImages/logo.png");
+        background-repeat:no-repeat;
+        margin:0;
+        padding:0;
+}
+
+#sub-navi
+{
+        height:30px;
+        margin:0;
+        padding-top:10px;
+        width:1000px;
+		text-align:right;
+}
+
+#content
+{
+        width:1000px;
+        background-image:url("designImages/content-bg.png");
+        background-repeat:repeat-y;
+        min-height:50px;
+        margin-top:-1px;
+}
+
+#navi
+{
+        padding:5px;
+        width:172px;
+        float:left;
+}
+
+#main-content
+{
+    padding:5px;
+    width:808px;
+    float:left;
+}
+
+#login-img
+{
+     width:100%;
+    background-image:url("designImages/login_bg.png");
+    background-repeat:repeat;  
+    height:100%;
+    padding-top:100px; 
+}
+
+#reg
+{
+        width:280px;
+        position:absolute;
+        left:50%;
+        margin-left:200px;
+        padding:10px;
+        height:15px;
+        background-color:#72ab21;
+        text-align:left;
+        margin-top:117px;
+        color:#fff;
+        overflow:hidden;
+		top:0;
+}
+
+.floatarea
+{
+	float:left;
+	width:390px;
+	margin-rigth:10px;
+	margin-top:10px;
+}
+
+.loginfield
+{
+	width:100px;	
+}
