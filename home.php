@@ -67,7 +67,7 @@ $nachrichten = "Sie haben " .mysql_num_rows($select_unread_messages) ." neue Nac
         <p style="clear:both;"></p>
         <div id="content">
             <div id="navi">
-            	<a href="creat_page.php">Seite anlegen</a><br/>
+            	<a href="create_page.php">Seite anlegen</a><br/>
             	<a href="newGroup.php">Neue Gruppe</a>
             </div>
             <div id="main-content">

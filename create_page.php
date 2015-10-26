@@ -10,7 +10,7 @@ if(!isset($_SESSION['userid']))
             exit;
 }
 //Seite anlegen
-if($_POST['creat'])
+if($_POST['create'])
 {
 	//Eingaben absichern, auf SQL-Injection
 	$name = mysql_real_escape_string($_POST['name']);
@@ -31,7 +31,7 @@ if($_POST['creat'])
         <div id="logo"></div>
         <div id="sub-navi"><?php echo $friendship_request; ?><a href="profile.php?p=<?php echo $userProfile['id']; ?>">Mein Profil</a></div>
         <div id="content">
-            <div id="navi"><a href="creat_page.php">Seite anlegen</a></div>
+            <div id="navi"><a href="create_page.php">Seite anlegen</a></div>
             <div id="main-content">
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             Name:<br>
@@ -40,7 +40,7 @@ if($_POST['creat'])
             <textarea name="ueber" style="width:100%; height:75px;"></textarea><br>
             Website:<br>
             <input type="text" name="ws" style="width:100%;"/>
-            <input type="submit" name="creat" value="   Seite erstellen   "/>
+            <input type="submit" name="create" value="   Seite erstellen   "/>
             </form>
             </div>
         </div>
