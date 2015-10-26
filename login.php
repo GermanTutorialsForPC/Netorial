@@ -1,8 +1,7 @@
 <?php
 session_start();
 //Datenbankverbindung
-mysql_connect("localhost", "root", "") or die("Fehler bei der Verbindung mit der Datenbank.");
-mysql_select_db("netorial");
+require_once('config.php');
 //Loginprozess
 $email = $_POST['email'];
 $password = $_POST['password'];

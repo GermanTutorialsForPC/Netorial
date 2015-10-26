@@ -34,8 +34,7 @@ if($prename != "" && $lastname !="" && $email != "" && $password != "")
                             $email = htmlentities($email);
                             $password = md5($password);
                             //Verbindung mit Datenbank
-                            mysql_connect("localhost", "root", "") or die("Fehler bei der Verbindung mit der Datenbank.");
-                            mysql_select_db("netorial");
+                            require_once('config.php');
                             //Überprüfen, ob E-Mail schon vorhanden
                             $selectEMail = mysql_query("SELECT * FROM user WHERE email = '{$email}'");
                             if(mysql_num_rows($selectEMail) == 0)
